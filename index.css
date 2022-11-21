@@ -1,0 +1,113 @@
+#container {
+  margin: auto;
+  margin-top: 20vh;
+  width: 50%;
+
+}
+.centerBtn{
+  margin: 36vw;
+  margin-top: 20vh;
+  width: 50%;
+}
+.task-list-wrapper {
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+
+}
+.task-list {
+  padding: 15px 25px 25px 25px;
+}
+.task-list li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #7474743b;
+}
+.task-list li:hover .custom-checkbox {
+  transform: scale(1.2);
+  color: #747474;
+}
+.task-list li:active .custom-checkbox {
+  transform: scale(1);
+  color: #ff652f;
+}
+[type="checkbox"]:checked + label .custom-checkbox {
+  transform: scale(1);
+  color: #ff652f;
+  opacity: 0.6;
+}
+[type="checkbox"]:checked + label .check-mark,
+[type="checkbox"]:checked + label {
+  opacity: 0.6;
+}
+.task-list input {
+  position: absolute;
+  opacity: 0;
+}
+.task-list label {
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.task-list label:hover {
+  color: #747474;
+}
+.custom-checkbox {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5em;
+  cursor: pointer;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+  color: #ff652f;
+}
+.check-mark {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  z-index: 1;
+}
+
+.test-css__autocomplete {
+  color: blue;
+}
+.add-task-btn{
+  font-size: 30px;
+  padding: 7px;
+  border-radius: 5px;
+}
+.add-task-btn:hover{
+  font-size: 30px;
+  background-color: #8f2904;
+  transition: 300ms ease-in-out;
+}
+.task-list-header{
+  padding-bottom: 15px;
+}
+.remove-complete-btn{
+  background-color: #ff652f;
+  
+}
+.remove-complete-btn:hover{
+  background-color: #8f2904;
+  transition: 300ms ease-in-out;
+}
+.add-task-btn{
+  padding-top: 7px;
+  padding-bottom: 17px;
+  padding-left: 10px;
+  padding-right: 17px;
+}
+#new-task-input{
+  color: #fff;
+}
