@@ -4,46 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>
-  <link rel="stylesheet" href="./dist/output.css">
-  <link rel="stylesheet" href="./index.css">
+  <title>project 1</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- global font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body bgcolor="0f172a">
-<div id="container" class="bg-slate-700 p-5  rounded-md group-hover:border-gray-900 border-2 h-80vh">
-  <div id="veritcal-center">
-<div class="wrapper">
-  <div class="header">
-    <div class="text-white bg-slate-800 p-5 rounded">
-      <h1 class="text-center font-bold text-2xl">
-        To do list
-      </h1>  
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>JS Quotes Genarator</h2>
     </div>
+
+    <div class="main-content">
+      <div class="text-area">
+        <span class="quote">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sed animi porro? Ipsam ipsa quis totam reprehenderit similique "
+        </span>
+      </div>
+      <div class="person">Abraham Lincoln</div>
+      <div class="button-area">
+        <button id="new-quote">New Quote</button>
+      </div>
+    </div>
+
   </div>
-  <div class="add-task text-center space-y-5">
-    <input id="new-task-input" type="text" placeholder="Enter task here..." class="bg-slate-700 p-3  rounded-md group-hover:border-gray-900 border-2 h-80vh "/>
-    <button class="add-task-btn w-10 text-white text-xl bg-orange-500 align-text">+</button>
-  </div>
-  <div class="task-list-header text-center text-white space-y-5 flex bg-slate-900 mt-4 rounded py-1">
-    <h2 class="p-5">Tasks</h2>
-    <div class="centerBtn">
-    <button class="remove-complete-btn p-2 rounded whitespace-nowrap self-center ">Complete Task</button>
-  </div>
-  </div>
-  <div class="task-list-wrapper">
-    <ul class="task-list"></ul>
-  </div>
-</div>
-<template id="task-template">
-  <li class="task">
-    <input type="checkbox" />
-    <label>
-      <span class="check-mark">&#10004;</span>
-      <span class="custom-checkbox"></span>
-    </label>
-  </li>
-</template>
-<script src="./todolist.js"></script>
-</div>
-</div>
+
+  <!-- js script -->
+  <script src="./script.js"></script>
 </body>
 </html>
